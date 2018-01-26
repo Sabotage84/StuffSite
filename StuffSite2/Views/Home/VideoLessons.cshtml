@@ -1,0 +1,13 @@
+﻿@model IEnumerable<StuffSite2.Models.Videos>
+@{
+    ViewBag.Title = "VideoLessons";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>VideoLessons</h2>
+
+@foreach (var item in Model)
+{
+        @Html.Partial("_PartialVideoLesson", item);
+}
+
