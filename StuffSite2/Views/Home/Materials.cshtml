@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Materials";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Materials</h2>
+<div class="row">
+    <div class="col-lg-3 text-center">
+        <h3 style="color:red">FIMO</h3>
+        <img src="~/images/81.jpg" alt="Alternate Text" />
+    </div>
+
+    <div class="col-lg-3 text-center">
+        <h3 style="color:red">NotFimo</h3>
+
+        <img src="~/images/df8010200190l.jpg" />
+    </div>
+
+    <div class="col-lg-3 text-center">
+        <h3 style="color:red">Name</h3>
+
+        <img src="~/images/df8010200210l.jpg" />
+    </div>
+
+    <div class="col-lg-3 text-center">
+        <h3 style="color:red">Four</h3>
+
+        <img src="~/images/g40488806712.jpg" />
+    </div>
+
+ </div>
+<div class="row">
+
+    <div class="col-lg-3 text-center">
+        
+        <h3 style="color:red" >@Html.ActionLink("FIVE", "VideoLessons", "Home")</h3>
+
+        <a href='@Url.Action("VideoLessons","Home")'><img src="~/images/g8010200316.jpg" /></a>
+        @*@Url.Action("Edit", new { id = item.ID })*@
+        @*<a href='@Html.ActionLink("FIVE", "VideoLessons", "Home")'><img src="~/images/g8010200316.jpg" /></a>*@
+        </div>
+    </div>

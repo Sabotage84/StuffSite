@@ -1,5 +1,14 @@
 ﻿@model StuffSite2.Models.Videos
 
-<h1>@Model.Name</h1>
-<iframe width="560" height="315" src=@Model.UrlVideo frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="col-lg-4" style="border:1px solid blue">
 
+    <h3>@Model.Name</h3>
+    <hr>
+    <iframe width="300" height="300" src=@Model.UrlVideo frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+@*<video width="300" height="400" controls="controls">
+    <source src="@Model.UrlVideo" type="video/mp4" />
+    <source src=@Server.MapPath("~/App_Data/videoplayback.webm") type="video/webm" />
+        <source src=@Server.MapPath("~/App_Data/videoplayback.ogv") type="video/ogg" />
+</video>*@

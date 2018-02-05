@@ -150,17 +150,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\videoplayback.mp4" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\81.jpg" />
+    <Content Include="images\df8010200190l.jpg" />
+    <Content Include="images\df8010200210l.jpg" />
+    <Content Include="images\g40488806712.jpg" />
+    <Content Include="images\g8010200316.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="App_Data\videoplayback.ogv" />
+    <Content Include="App_Data\videoplayback.webm" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -188,9 +196,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\VideoLessons.cshtml" />
     <Content Include="Views\Home\_PartialVideoLesson.cshtml" />
+    <Content Include="Views\Home\Tools.cshtml" />
+    <Content Include="Views\Home\Materials.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="videos\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -14,5 +14,7 @@ namespace StuffSite2.Models
         public string UrlVideo { get { return urlVideo; } set => urlVideo = value; }
 
         private string urlVideo;
+
+        
     }
 }
