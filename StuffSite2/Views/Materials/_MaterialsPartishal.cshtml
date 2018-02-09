@@ -1,0 +1,32 @@
+﻿@model StuffSite2.Models.Product
+
+<div class="row">
+    <div class="col-lg-4">
+        <img src="@Model.Image" alt="Alternate Text" />
+    </div>
+
+    <div class="col-lg-8">
+        <div style="border:1px solid black">
+            @Model.ID
+        <br>
+        </div>
+        <div style="border:1px solid black">
+            @Model.Description
+            <br>
+        </div>
+        <div style="border:1px solid black">
+            @Model.Price
+            <br>
+        </div>
+        <div style="border:1px solid black">
+            @Model.IsInStock
+            <br>
+        </div>
+        <div style="border:1px solid black">
+            <button class="btn-info">Купить</button>
+            <br>
+        </div>
+
+    </div>
+
+</div>

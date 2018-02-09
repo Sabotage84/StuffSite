@@ -143,9 +143,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MaterialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Videos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -198,9 +200,12 @@
     <Content Include="Views\Home\_PartialVideoLesson.cshtml" />
     <Content Include="Views\Home\Tools.cshtml" />
     <Content Include="Views\Home\Materials.cshtml" />
+    <Content Include="Views\Materials\Index.cshtml" />
+    <Content Include="Views\Materials\_MaterialsPartishal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="videos\" />
+    <Folder Include="Views\test\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
