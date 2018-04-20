@@ -5,9 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+   
+@*@Html.Partial("_MaterialsPartishal", (StuffSite2.Models.Product)ViewBag.tempProd);*@
 
-@Html.Partial("_MaterialsPartishal", (StuffSite2.Models.Product)ViewBag.tempProd);
+@Html.Partial("_MaterialsPartishal", Model)
 
 
    

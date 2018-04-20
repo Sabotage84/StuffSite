@@ -1,32 +1,52 @@
 ﻿@model StuffSite2.Models.Product
 
-<div class="row">
-    <div class="col-lg-4">
-        <img src="@Model.Image" alt="Alternate Text" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+<div>
+    <div class="row equal" @*style="display:table"*@>
+        <div class="col-lg-4 text-center" style="display:table-cell">
+            <h1 style="color:red">@ViewBag.tempProd.Name</h1>
+            <img src="@Model.Image" alt="Alternate Text" />
+        </div>
+
+        <div class="col-lg-8" id="bottomDiv"  @*style="display:table-cell; vertical-align:bottom"*@>
+
+            <div style="position:relative; height:100%" >
+                <div style="position:absolute; bottom:0">
+                    <div id="bottomDiv" style="align-items:">
+
+                        <div style="padding-bottom:15px">
+                            <strong style="color:brown">Атикул: @Model.ID</strong> 
+                            <br>
+                        </div>
+                        <div style="padding-bottom:15px">
+                            @Model.Description
+                            <br>
+                        </div>
+                        <div style="padding-bottom:15px">
+                            <strong style="color:chocolate">Цена: @Model.Price рублей</strong>
+                            <br>
+                        </div>
+                        <div style="padding-bottom:15px">
+                            @if (Model.IsInStock)
+                            {
+                                <strong style="color:forestgreen">Есть на складе</strong>
+                            }
+                            else
+                            {
+                                <strong style="color:red">Нет на складе</strong>
+                            }
+                            <br>
+                        </div>
+                        <div style="padding-bottom:15px">
+                            <button class="btn-info" style="border-radius:3px">Купить</button>
+                            <br>
+                        </div>
+                    </div>
+            </div>
+                </div>
+        </div>
+
     </div>
-
-    <div class="col-lg-8">
-        <div style="border:1px solid black">
-            @Model.ID
-        <br>
-        </div>
-        <div style="border:1px solid black">
-            @Model.Description
-            <br>
-        </div>
-        <div style="border:1px solid black">
-            @Model.Price
-            <br>
-        </div>
-        <div style="border:1px solid black">
-            @Model.IsInStock
-            <br>
-        </div>
-        <div style="border:1px solid black">
-            <button class="btn-info">Купить</button>
-            <br>
-        </div>
-
-    </div>
-
 </div>
