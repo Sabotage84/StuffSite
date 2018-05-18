@@ -192,3 +192,7 @@ D:\StuffSite\StuffSite\StuffSite2\obj\Debug\StuffSite2.csprojResolveAssemblyRefe
 D:\StuffSite\StuffSite\StuffSite2\obj\Debug\StuffSite2.csproj.CoreCompileInputs.cache
 D:\StuffSite\StuffSite\StuffSite2\obj\Debug\StuffSite2.dll
 D:\StuffSite\StuffSite\StuffSite2\obj\Debug\StuffSite2.pdb
+D:\StuffSite\StuffSite\StuffSite2\bin\EntityFramework.dll
+D:\StuffSite\StuffSite\StuffSite2\bin\EntityFramework.SqlServer.dll
+D:\StuffSite\StuffSite\StuffSite2\bin\EntityFramework.xml
+D:\StuffSite\StuffSite\StuffSite2\bin\EntityFramework.SqlServer.xml

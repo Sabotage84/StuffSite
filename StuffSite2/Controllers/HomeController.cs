@@ -11,7 +11,9 @@ namespace StuffSite2.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            ProductsContext db = new ProductsContext();
+
+            return View(db.Products);
         }
 
         public ActionResult VideoLessons()
