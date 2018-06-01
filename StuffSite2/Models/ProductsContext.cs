@@ -8,7 +8,7 @@ namespace StuffSite2.Models
 {
     public class ProductsContext: DbContext
     {
-        public ProductsContext(): base("DB1")
+        public ProductsContext(): base("ProductsDB")
         { }
 
         public DbSet<Product> Products { get; set; }

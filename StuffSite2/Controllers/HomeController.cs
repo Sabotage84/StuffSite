@@ -11,9 +11,7 @@ namespace StuffSite2.Controllers
     {
         public ActionResult Index()
         {
-            ProductsContext db = new ProductsContext();
-
-            return View(db.Products);
+            return View();
         }
 
         public ActionResult VideoLessons()
@@ -64,7 +62,9 @@ namespace StuffSite2.Controllers
 
         public ActionResult Materials()
         {
-            return View();
+            ProductsContext db = new ProductsContext();
+
+            return View(db.Products);
         }
     }
 }
