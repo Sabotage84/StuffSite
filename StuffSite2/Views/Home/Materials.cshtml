@@ -7,40 +7,28 @@
 
 <h2>Materials</h2>
 <div class="row">
-    @foreach (var item in Model)
-    {
-        @Html.Partial("_PartialMaterials", item);
+
+    @{
+        string startRow = "<div class=\"row\">";
+        string endRow = " </div>";
     }
 
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        if (i % 4 == 0)
+        {
+            @Html.Raw(startRow)
+        }
+        @Html.Partial("_PartialMaterials", Model.ElementAt(i));
 
-    @*<div class="col-lg-3 text-center">
-        <a href='@Url.Action("Index","Materials", new {id="1"})'><h3 style="color:red">FIMO</h3></a>
-        <a href='@Url.Action("Index","Materials", new {id="1"})'><img src="~/images/81.jpg" alt="Alternate Text" /></a>
-    </div>*@
+        if (i % 4 == 3 || i == (Model.Count() - 1))
+        {
+            @Html.Raw(endRow)
+        }
+    }
+    @*@foreach (var item in Model)
+    {
+        @Html.Partial("_PartialMaterials", item);
+    }*@
 
-    @*<div class="col-lg-3 text-center">
-        <a href='@Url.Action("Index","Materials", new {id="4"})'><h3 style="color:red">NotFimo</h3></a>
-
-        <a href='@Url.Action("Index","Materials", new {id="4"})'> <img src="~/images/df8010200190l.jpg" /></a>
-</div>*@
-
-    @*<div class="col-lg-3 text-center">
-        <a href='@Url.Action("Index","Materials", new {id="5"})'><h3 style="color:red">Волшебница</h3></a>
-
-        <a href='@Url.Action("Index","Materials", new {id="5"})'><img src="~/images/df8010200210l.jpg" /></a>
 </div>
-
-    <div class="col-lg-3 text-center">
-        <a href='@Url.Action("Index","Materials", new {id="6"})'><h3 style="color:red">FIVE</h3></a>
-
-        <img src="~/images/g40488806712.jpg" />
-</div>*@
-
- </div>
-@*<div class="row">
-
-    <div class="col-lg-3 text-center">
-        <a href='@Url.Action("Index","Materials", new {id="1"})'><h3 style="color:red">FIVE</h3></a>
-        <a href='@Url.Action("Index","Materials", new {id="1"})')'><img src="~/images/g8010200316.jpg" /></a>
-        </div>
-    </div>*@

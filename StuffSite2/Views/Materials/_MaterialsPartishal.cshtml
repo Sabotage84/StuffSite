@@ -4,13 +4,13 @@
 
 
 <div>
-    <div class="row equal" @*style="display:table"*@>
+    <div class="row equal" >
         <div class="col-lg-4 text-center" style="display:table-cell">
             <h1 style="color:red">@Model.Name</h1>
-            <img src="@Model.Image" alt="Alternate Text" />
+            <img src="~/@Model.Image" alt="Alternate Text" />
         </div>
 
-        <div class="col-lg-8" id="bottomDiv"  @*style="display:table-cell; vertical-align:bottom"*@>
+        <div class="col-lg-8" id="bottomDiv">  
 
             <div style="position:relative; height:100%" >
                 <div style="position:absolute; bottom:0">
